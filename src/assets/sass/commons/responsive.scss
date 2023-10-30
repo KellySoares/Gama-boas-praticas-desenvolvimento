@@ -1,0 +1,62 @@
+@media (max-width: 600px) {
+  .background--two {
+    height: 1400px;
+
+    .block-section--two {
+      display: grid;
+      height: 90%;
+
+      & p {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 40px;
+      }
+      & img {
+        margin: 0 auto;
+        max-width: 60%;
+      }
+    }
+  }
+  .footer-contain {
+    margin-top: calc(10px - 100px);
+  }
+  .error-default {
+    height: 1400px;
+
+    .error {
+      margin: 50% 0;
+    }
+  }
+
+  .section {
+    width: auto;
+  }
+  .background--jedi {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .block-section--jedi {
+      & h1 {
+        font-size: 1.9em;
+        margin-top: 10%;
+        margin-right: 0%;
+        text-align: center;
+      }
+    }
+  }
+  .menu {
+    
+    padding: 1em 3em;
+    
+  
+    .nav-principal {
+      margin-right: 0;
+      
+    }
+  }
+
+}

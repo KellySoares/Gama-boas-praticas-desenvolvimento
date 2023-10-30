@@ -1,4 +1,80 @@
-*{
+$backgroundBlack: #000;
+$backgroundYellow: #EEC900;
+$fontColor: #fff;
+$fontColorBlack: #000;
+$fontFamilyDefault: "Roboto", sans-serif;
+* {
   margin: 0;
   padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: $backgroundBlack;
+  color: $fontColor;
+  font-family: $fontFamilyDefault;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
+  font-family: $fontFamilyDefault;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.block-section {
+  display: block;
+}
+
+.main-left {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+}
+
+.footer-contain {
+  margin-top: calc(10px - 110px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $fontFamilyDefault;
+
+  & img {
+    height: 10em;
+    width: auto;
+  }
+}
+
+.error-default {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+
+  .error {
+    margin: 10% 5%;
+    & h1 {
+      margin-bottom: 3em;
+      text-align: center;
+    }
+    & h2,
+    h3 {
+      text-align: center;
+    }
+  }
+}
+a {
+  text-decoration: none;
+  font-family: $fontFamilyDefault;
+  color: $fontColor;
 }

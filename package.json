@@ -1,20 +1,22 @@
 {
   "name": "gamaacademy",
   "version": "1.0.0",
-  "description": "Template FullJS",
+  "description": "Template FullJS - Boas Práticas de Desenvolvimento",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "sass --watch src/assets/sass/style.scss:src/css/style.css & webpack serve --open --config webpack.dev.js",
+    "start": "webpack serve --open --config webpack.dev.js",
+    "sass": "sass --watch src/assets/sass/style.scss:src/css/style.css",
     "build": "node-sass src/assets/sass/style.scss > src/css/style.css && webpack --config webpack.prod.js"
   },
   "keywords": [],
-  "author": "Douglas Morais",
+  "author": "Kelly Soares",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
     "clean-webpack-plugin": "^3.0.0",
-    "node-sass": "^5.0.0",
+    "node-gyp": "^9.4.1",
+    "node-sass": "^9.0.0",
     "sweetalert2": "^10.15.5",
     "webpack": "^5.21.1",
     "webpack-dev-server": "^3.11.2",
